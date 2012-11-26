@@ -10,7 +10,7 @@ SIZE = WIDTH * HEIGHT
 
 randomdata = [randint(0, 1) for i in range(WIDTH * HEIGHT)]
 
-original = life.Life(HEIGHT, WIDTH, randomdata)
+original = life.Life(WIDTH, HEIGHT, randomdata)
 saved = original.clone()
 
 print "Original:"
@@ -38,7 +38,7 @@ while gumshoe.span > 1:
         print "\t%i" % span
     last_span = span
 
-guess = life.Life(HEIGHT, WIDTH, [a.confidence for a in gumshoe])
+guess = life.Life(WIDTH, HEIGHT, [a.confidence for a in gumshoe])
 
 print "Guess:"
 print guess
