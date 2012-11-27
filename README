@@ -3,7 +3,7 @@ So we can't precisely reverse a 2D cellular automata board? Well, we can at leas
 A Detective works to find out how a given grid of Conway's Game of Life cellular automata got to be the way they are at present.
 That is, it tries to find a board that results in the given board.
 
-Given a Life object, a Detective builds a matching grid of Alibis (each Alibi is a lists of Pasts for a single Cell), and then repeatedly checks each Alibi against its neighbors, eliminating Alibis that are entirely impossible.
+Given a Life object, a Detective builds a matching grid of Alibis (each Alibi is a list of Pasts for a single Cell), and then repeatedly checks each Alibi against its neighbors, eliminating Alibis that are entirely impossible.
 
 Once that investigation is over, the next step is to guess, accusing each cell of having either been alive or dead in the previous step. It helps to repeatedly guess until every cell has only a single Alibi that matches with its neighbors.
 
